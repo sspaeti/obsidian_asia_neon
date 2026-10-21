@@ -1,0 +1,667 @@
+:root
+{
+    /* DARK THEME */
+    /* Asia Neon — palette generated from Singapore night photos (omarchy pics-asia-neon) */
+    /* Bg Shades */
+    --neonInk0      : #0b0911; /* darker background */
+    --neonInk1      : #0f0d17; /* dark background */
+    --neonInk2      : #14111f; /* main background */
+    --neonInk3      : #1c1829; /* raised surface */
+    --neonInk4      : #292634; /* lighter background */
+    --neonInk5      : #3a2f5c; /* selection */
+
+    /* Fg and Comments */
+    --neonFg        : #e6e0f5; /* foreground */
+    --neonFgBright  : #f1eefa; /* bright foreground */
+    --neonFgDark    : #aba6b9; /* dark foreground */
+    --neonMuted     : #6f6790; /* muted */
+    --neonBrown     : #8a6f9a; /* brown */
+
+    /* Neon lights */
+    --neonAccent    : #a67bff; /* accent */
+    --neonRed       : #ff6b8a; /* red */
+    --neonYellow    : #ffd166; /* yellow */
+    --neonOrange    : #ff9f5a; /* orange */
+    --neonGreen     : #6ee7a8; /* green */
+    --neonCyan      : #5cd8ff; /* cyan */
+    --neonBlue      : #5a8cff; /* blue */
+    --neonMagenta   : #d67bff; /* magenta */
+
+    --neonBrightRed     : #ff96ac;
+    --neonBrightYellow  : #ffdc8a;
+    --neonBrightGreen   : #91edbd;
+    --neonBrightCyan    : #7fe0ff;
+    --neonBrightBlue    : #83a9ff;
+    --neonBrightMagenta : #e2a1ff;
+
+    /* LIGHT THEME */
+    /* Asia Neon Day — lavender paper with the same neon hues, darkened for contrast */
+    --dayWhite0     : #fbfaff; /* sidebar */
+    --dayWhite1     : #f6f3fc; /* main background */
+    --dayWhite2     : #eee9f8; /* raised surface */
+    --dayWhite3     : #e8e2f5; /* alt surface */
+    --dayWhite4     : #ddd5ef; /* hover */
+    --dayGray       : #ece7f6; /* code background */
+
+    --dayInk        : #2b2440; /* text */
+    --dayInkDark    : #1a1430; /* bold text */
+    --dayMuted      : #6a6185; /* muted text */
+    --dayFaint      : #9a92b0; /* faint text */
+
+    --dayAccent     : #7c4ddb; /* accent */
+    --dayRed        : #d9365d;
+    --dayYellow     : #b8860b;
+    --dayOrange     : #d9711e;
+    --dayGreen      : #1f9e63;
+    --dayCyan       : #0a8fc2;
+    --dayBlue       : #2f5fd6;
+    --dayMagenta    : #c23fd6;
+}
+
+.theme-dark
+{
+    --background-primary:         var(--neonInk2);
+    --background-primary-alt:     var(--neonInk3);
+    --background-secondary:       var(--neonInk1);
+    --background-secondary-alt:   var(--neonInk3);
+    --background-modifier-border: var(--neonInk4);
+    --background-modifier-hover:  var(--neonInk4);
+    --background-modifier-form-field: var(--neonInk1);
+    --interactive-normal:         var(--neonInk4);
+    --interactive-hover:          var(--neonInk5);
+    --text-normal:                var(--neonFg);
+    --text-muted:                 var(--neonFgDark);
+    --text-faint:                 var(--neonMuted);
+    --text-on-accent:             var(--neonInk0);
+    --text-title-h1:              var(--neonMagenta);
+    --text-title-h2:              var(--neonCyan);
+    --text-title-h3:              var(--neonRed);
+    --text-title-h4:              var(--neonYellow);
+    --text-title-h5:              var(--neonGreen);
+    --text-title-h6:              var(--neonBlue);
+    --text-link:                  var(--neonCyan);
+    --text-a:                     var(--neonBrightCyan);
+    --text-a-hover:               var(--neonMagenta);
+    --text-a-url:                 var(--neonBrightBlue); /* hover internal link, graph view link and standalone links. External links no */
+    --link-color:                 var(--neonAccent);    /* internal wikilinks */
+    --link-color-hover:           var(--text-a-url);
+    --text-mark:                  rgba(255, 209, 102, 0.35); /* neonYellow */
+    --pre-code:                   var(--neonInk1);
+    --text-highlight-bg:          var(--neonInk5);
+    --interactive-accent:         var(--neonAccent); /* vim cursor background AND highlight on right */
+    --interactive-accent-hover:   var(--neonMagenta);
+    --interactive-before:         var(--neonInk4);
+    --text-accent:                var(--neonAccent);
+    --text-accent-hover:          var(--neonMagenta);
+    --interactive-accent-rgb:     var(--neonAccent);
+    --inline-code:                var(--neonOrange);
+    --code-block:                 var(--neonFgDark);
+    --code-background:            var(--neonInk1);
+    --code-normal:                var(--neonCyan);
+    --table-border-color:         var(--background-secondary);
+    --vim-cursor-background:      var(--neonYellow);
+    --vim-cursor-color:           var(--neonInk0);
+    --text-selection:             rgba(166, 123, 255, 0.35); /* neonAccent */
+    --text-tag:                   var(--neonMagenta);
+    --task-checkbox:              var(--neonMuted);
+    --table-header:               var(--neonInk3);
+    --table-row-even:             var(--neonInk3);
+    --table-row-odd:              var(--neonInk2);
+    --table-hover:                var(--neonInk4);
+    --bold-color:                 var(--neonFgBright);
+    --text-error:                 var(--neonRed);
+    --text-success:               var(--neonGreen);
+    --graph-line:                 var(--neonMuted);
+    --graph-node:                 var(--neonAccent);
+    --graph-node-focused:         var(--neonCyan);
+    --graph-node-tag:             var(--neonMagenta);
+    --graph-node-attachment:      var(--neonGreen);
+}
+
+.theme-light
+{
+    --background-primary:         var(--dayWhite1);
+    --background-primary-alt:     var(--dayWhite2);
+    --background-secondary:       var(--dayWhite0);
+    --background-secondary-alt:   var(--dayWhite3);
+    --background-modifier-border: var(--dayWhite4);
+    --background-modifier-hover:  var(--dayWhite4);
+    --background-modifier-form-field: var(--dayWhite0);
+    --interactive-normal:         var(--dayWhite3);
+    --interactive-hover:          var(--dayWhite4);
+    --text-normal:                var(--dayInk);
+    --text-muted:                 var(--dayMuted);
+    --text-faint:                 var(--dayFaint);
+    --text-on-accent:             var(--dayWhite0);
+    --text-title-h1:              var(--dayMagenta);
+    --text-title-h2:              var(--dayCyan);
+    --text-title-h3:              var(--dayRed);
+    --text-title-h4:              var(--dayYellow);
+    --text-title-h5:              var(--dayGreen);
+    --text-title-h6:              var(--dayBlue);
+    --text-link:                  var(--dayCyan);
+    --text-a:                     var(--dayBlue);
+    --text-a-hover:               var(--dayMagenta);
+    --text-a-url:                 var(--dayBlue); /* hover internal link, graph view link and standalone links. External links no */
+    --link-color:                 var(--dayAccent);    /* internal wikilinks */
+    --link-color-hover:           var(--text-a-url);
+    --text-mark:                  rgba(184, 134, 11, 0.3); /* dayYellow */
+    --pre-code:                   var(--dayGray);
+    --text-highlight-bg:          var(--dayWhite4);
+    --interactive-accent:         var(--dayAccent); /* vim cursor background AND highlight on right */
+    --interactive-accent-hover:   var(--dayMagenta);
+    --interactive-before:         var(--dayWhite4);
+    --text-accent:                var(--dayAccent);
+    --text-accent-hover:          var(--dayMagenta);
+    --interactive-accent-rgb:     var(--dayAccent);
+    --inline-code:                var(--dayOrange);
+    --code-block:                 var(--dayInk);
+    --code-background:            var(--dayGray);
+    --code-normal:                var(--dayCyan);
+    --table-border-color:         var(--background-secondary);
+    --vim-cursor-background:      var(--dayAccent);
+    --vim-cursor-color:           var(--dayWhite0);
+    --text-selection:             rgba(124, 77, 219, 0.25); /* dayAccent */
+    --text-tag:                   var(--dayMagenta);
+    --task-checkbox:              var(--dayFaint);
+    --table-header:               var(--dayWhite3);
+    --table-row-even:             var(--dayWhite2);
+    --table-row-odd:              var(--dayWhite1);
+    --table-hover:                var(--dayWhite4);
+    --bold-color:                 var(--dayInkDark);
+    --text-error:                 var(--dayRed);
+    --text-success:               var(--dayGreen);
+    --graph-line:                 var(--dayFaint);
+    --graph-node:                 var(--dayAccent);
+    --graph-node-focused:         var(--dayCyan);
+    --graph-node-tag:             var(--dayMagenta);
+    --graph-node-attachment:      var(--dayGreen);
+}
+
+body {
+    --font-text-theme: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-monospace-theme: 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+body.theme-dark {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+body.theme-light {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none;
+    background-color: var(--pre-code);
+}
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb);
+}
+.graph-view.color-text
+{
+    color: var(--text-a-url);
+}
+/*
+.graph-view.color-fill
+{
+    color: var(--background-secondary);
+}
+.graph-view.color-line
+{
+  color: var(--background-modifier-border);
+}
+*/
+
+html,
+body
+{
+    /* font-size: 16px; */
+}
+
+strong
+{
+    font-weight: 600;
+}
+
+.cm-hmd-internal-link
+{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-url);
+    text-decoration: none;
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag);
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+a.tag:hover {
+    text-decoration: underline;
+}
+
+mark
+{
+    background-color: var(--text-mark);
+}
+
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.view-actions a
+{
+    color: var(--text-normal);
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a);
+}
+
+.HyperMD-codeblock-bg
+{
+    background-color: var(--pre-code);
+}
+
+.HyperMD-codeblock
+{
+    line-height: 1.4em;
+    color: var(--code-block);
+}
+
+.HyperMD-codeblock-begin
+{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.HyperMD-codeblock-end
+{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+table {
+    border: 1px solid var(--background-secondary);
+    border-collapse: collapse;
+}
+  
+th {
+    font-weight: 600;
+    border: 0px;
+    text-align: left;
+    background-color: var(--table-header);
+    color: var(--text-accent);
+}
+
+td {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid var(--background-secondary);
+}
+
+tr:nth-child(even){ background-color: var(--table-row-even) }
+tr:nth-child(odd){ background-color: var(--table-row-odd) }
+tr:hover { background-color: var(--table-hover); }
+  
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border);
+}
+
+.HyperMD-table-row
+{
+    line-height: normal;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* background-color: var(--pre-code); */
+}
+
+.HyperMD-table-row-0
+{
+    /* padding-top: 4px; */
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a);
+}
+
+.nav-file-tag
+{
+    color: var(--text-a);
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a);
+    background-color: var(--background-primary-alt);
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+body.theme-dark .cm-line.HyperMD-list-line,
+body.theme-light .cm-line.HyperMD-list-line,
+body.theme-dark .cm-line.HyperMD-task-line,
+body.theme-light .cm-line.HyperMD-task-line
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cm-hashtag-begin
+{
+    color: var(--text-tag);
+    background-color: var(--background-secondary-alt);
+    padding: 2px 0 2px 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-decoration: none;
+}
+
+.cm-hashtag-end
+{
+    color: var(--text-tag);
+    background-color: var(--background-secondary-alt);
+    padding: 2px 4px 2px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-decoration: none;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    text-decoration: underline;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em;
+    background-color: var(--pre-code);
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px;
+    line-height: 1.4em;
+    display: block;
+    color: var(--code-block);
+}
+
+body.theme-dark .markdown-rendered :not(pre) > code,
+body.theme-light .markdown-rendered :not(pre) > code,
+body.theme-dark .markdown-preview-section :not(pre) > code,
+body.theme-light .markdown-preview-section :not(pre) > code
+{
+    color: var(--inline-code);
+}
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto;
+}
+
+body.theme-dark .cm-line .cm-inline-code,
+body.theme-light .cm-line .cm-inline-code
+{
+    color: var(--inline-code);
+    background-color: var(--pre-code);
+    padding: 1px;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600;
+}
+
+.side-dock-title
+{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+    padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+    font-weight: 600;
+}
+
+.markdown-embed
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cm-header-1.cm-link,
+h1 a
+{
+    color: var(--text-title-h1);
+}
+
+.cm-header-2.cm-link,
+h2 a
+{
+    color: var(--text-title-h2);
+}
+
+.cm-header-3.cm-link,
+h3 a
+{
+    color: var(--text-title-h3);
+}
+.cm-header-4.cm-link,
+h4 a
+{
+    color: var(--text-title-h4);
+}
+.cm-header-5.cm-link,
+h5 a
+{
+    color: var(--text-title-h5);
+}
+.cm-header-6.cm-link,
+h6 a
+{
+    color: var(--text-title-h6);
+}
+
+.cm-header {
+    font-weight: 500;
+}
+
+.HyperMD-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500;
+    font-size: 2.2em;
+    color: var(--text-title-h1);
+}
+
+.HyperMD-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500;
+    font-size: 2.0em;
+    color: var(--text-title-h2);
+    /* text-transform: uppercase; */
+
+}
+
+.HyperMD-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500;
+    font-size: 1.8em;
+    color: var(--text-title-h3);
+}
+
+.HyperMD-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500;
+    font-size: 1.6em;
+    color: var(--text-title-h4);
+}
+
+.HyperMD-header-5,
+.markdown-preview-section h5
+{
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--text-title-h5);
+}
+
+.HyperMD-header-6,
+.markdown-preview-section h6
+{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--text-title-h6);
+}
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
+.checkbox-container
+{
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after
+{
+    background-color: var(--background-secondary-alt);
+}
+
+.mod-cta
+{
+    color: var(--background-secondary-alt);
+    font-weight: 600;
+}
+
+.mod-cta a
+{
+    color: var(--background-secondary-alt);
+    font-weight: 600;
+}
+
+.mod-cta:hover
+{
+    background-color: var(--interactive-before);
+    font-weight: 600;
+}
+
+.CodeMirror-cursor
+{
+    background-color: var(--vim-cursor-background);
+    color: var(--vim-cursor-color);
+    opacity: 60%;
+}
+
+input.task-list-item-checkbox {
+    border: 1px solid var(--task-checkbox);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked
+{
+    background-color: var(--task-checkbox);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+::selection
+{
+    background-color: var(--text-selection);
+}
+
+.mermaid .note
+{
+    fill: var(--background-secondary-alt);
+}
+.cm-line .cm-strong
+{
+    color: var(--bold-color);
+}
+
