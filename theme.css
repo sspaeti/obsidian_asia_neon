@@ -73,13 +73,13 @@
     --text-muted:                 var(--neonFgDark);
     --text-faint:                 var(--neonMuted);
     --text-on-accent:             var(--neonInk0);
-    --text-title-h1:              var(--neonMagenta);
-    --text-title-h2:              var(--neonCyan);
-    --text-title-h3:              var(--neonRed);
-    --text-title-h4:              var(--neonYellow);
-    --text-title-h5:              var(--neonGreen);
-    --text-title-h6:              var(--neonBlue);
-    --text-link:                  var(--neonCyan);
+    --text-title-h1:              var(--neonRed);
+    --text-title-h2:              var(--neonGreen);
+    --text-title-h3:              var(--neonYellow);
+    --text-title-h4:              var(--neonBlue);
+    --text-title-h5:              var(--neonMagenta);
+    --text-title-h6:              var(--neonMagenta);
+    --text-link:                  var(--neonBlue);
     --text-a:                     var(--neonBrightCyan);
     --text-a-hover:               var(--neonMagenta);
     --text-a-url:                 var(--neonBrightBlue); /* hover internal link, graph view link and standalone links. External links no */
@@ -94,7 +94,7 @@
     --text-accent:                var(--neonAccent);
     --text-accent-hover:          var(--neonMagenta);
     --interactive-accent-rgb:     var(--neonAccent);
-    --inline-code:                var(--neonOrange);
+    --inline-code:                var(--neonCyan);
     --code-block:                 var(--neonFgDark);
     --code-background:            var(--neonInk1);
     --code-normal:                var(--neonCyan);
@@ -102,7 +102,7 @@
     --vim-cursor-background:      var(--neonYellow);
     --vim-cursor-color:           var(--neonInk0);
     --text-selection:             rgba(166, 123, 255, 0.35); /* neonAccent */
-    --text-tag:                   var(--neonMagenta);
+    --text-tag:                   var(--neonCyan);
     --task-checkbox:              var(--neonMuted);
     --table-header:               var(--neonInk3);
     --table-row-even:             var(--neonInk3);
@@ -133,13 +133,13 @@
     --text-muted:                 var(--dayMuted);
     --text-faint:                 var(--dayFaint);
     --text-on-accent:             var(--dayWhite0);
-    --text-title-h1:              var(--dayMagenta);
-    --text-title-h2:              var(--dayCyan);
-    --text-title-h3:              var(--dayRed);
-    --text-title-h4:              var(--dayYellow);
-    --text-title-h5:              var(--dayGreen);
-    --text-title-h6:              var(--dayBlue);
-    --text-link:                  var(--dayCyan);
+    --text-title-h1:              var(--dayRed);
+    --text-title-h2:              var(--dayGreen);
+    --text-title-h3:              var(--dayYellow);
+    --text-title-h4:              var(--dayBlue);
+    --text-title-h5:              var(--dayMagenta);
+    --text-title-h6:              var(--dayMagenta);
+    --text-link:                  var(--dayBlue);
     --text-a:                     var(--dayBlue);
     --text-a-hover:               var(--dayMagenta);
     --text-a-url:                 var(--dayBlue); /* hover internal link, graph view link and standalone links. External links no */
@@ -154,7 +154,7 @@
     --text-accent:                var(--dayAccent);
     --text-accent-hover:          var(--dayMagenta);
     --interactive-accent-rgb:     var(--dayAccent);
-    --inline-code:                var(--dayOrange);
+    --inline-code:                var(--dayCyan);
     --code-block:                 var(--dayInk);
     --code-background:            var(--dayGray);
     --code-normal:                var(--dayCyan);
@@ -162,7 +162,7 @@
     --vim-cursor-background:      var(--dayAccent);
     --vim-cursor-color:           var(--dayWhite0);
     --text-selection:             rgba(124, 77, 219, 0.25); /* dayAccent */
-    --text-tag:                   var(--dayMagenta);
+    --text-tag:                   var(--dayCyan);
     --task-checkbox:              var(--dayFaint);
     --table-header:               var(--dayWhite3);
     --table-row-even:             var(--dayWhite2);
