@@ -1,5 +1,5 @@
 # Asia Neon (Obsidian Theme)
-This is an **Asia Neon** theme for [Obsidian](https://obsidian.md/). The color palette is generated from my own night photos of Singapore (Gardens by the Bay, Marina Bay) and is the same palette I use for my [Omarchy](https://omarchy.org) theme `pics-asia-neon` (see my [dotfiles](https://github.com/sspaeti/dotfiles/tree/master/omarchy/.config/omarchy/themes/pics-asia-neon)). It supports dark and light mode.
+This is an **Asia Neon** theme for [Obsidian](https://obsidian.md/). The color palette is generated from my own night photos of Singapore (Gardens by the Bay, Marina Bay) and is the same palette I use for my [Omarchy](https://omarchy.org) theme [omarchy-asia-neon-theme](https://github.com/sspaeti/omarchy-asia-neon-theme). It supports dark and light mode.
 
 Installation: Simply search `Asia Neon` in the Obsidian Community Themes and Install. Or if manually, copy the `theme.css` file to `.obsidian/themes/Asia Neon/` in your vault directory and reload Obsidian for it to take effect.
 
