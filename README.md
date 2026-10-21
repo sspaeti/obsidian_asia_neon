@@ -13,15 +13,7 @@ Installation: Simply search `Asia Neon` in the Obsidian Community Themes and Ins
 The dark palette is extracted from these pictures, which I use as desktop backgrounds in Omarchy:
 
 ![](backgrounds/Asia_1160_CCF1050517.jpg)
-![](backgrounds/Asia_1220_CCF1050580.jpg)
 ![](backgrounds/Asia_1100_CCF1050442.jpg)
-![](backgrounds/Asia_1107_CCF1050456.jpg)
-![](backgrounds/Asia_1168_CCF1050525.jpg)
-![](backgrounds/Asia_1178_CCF1050535.jpg)
-![](backgrounds/Asia_1204_CCF1050564.jpg)
-![](backgrounds/Asia_1279_CCF1050639.jpg)
-![](backgrounds/Asia_359_MPM182913.jpg)
-![](backgrounds/Asia_623_MPM212110.jpg)
 
 ### Color Palette
 
